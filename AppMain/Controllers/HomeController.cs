@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using AppSub1;
 
 namespace AppMain.Controllers
 {
@@ -10,6 +11,9 @@ namespace AppMain.Controllers
     {
         public ActionResult Index()
         {
+            var test = new Class1();
+            test.Test();
+            
             return View();
         }
 
